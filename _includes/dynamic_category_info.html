@@ -1,0 +1,8 @@
+{% assign decoded_url = page.url | url_decode %}
+{% for category in site.data.categories %}
+    {% if decoded_url contains category[1].name %}
+		{% assign category_title = category[1].title %}
+		{% assign category_description = category[1].description %}
+		{% assign category_cover = category[1].cover %}
+    {% endif %}
+{% endfor %}

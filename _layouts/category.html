@@ -1,0 +1,34 @@
+---
+layout: default
+current: category
+title: Category Page
+cover: false
+class: 'category-template'
+navigation: True
+logo: 'assets/images/site/ghost.png'
+---
+
+{% include dynamic_category_info.html %}
+<header class="site-header outer {% if category_cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if category_cover %}{{ category_cover }}{% else %}{{ page.cover }}{% endif%});background-repeat: no-repeat;background-position: 50% 45%;background-size: cover;min-width: 100%;will-change: transform; {% else %}no-cover{% endif %}">
+	<div class="inner">
+        {% include site-nav.html %}
+        <div class="site-header-content">
+            <h1 class="site-title">{{ category_title | capitalizeall }}</h1>
+            <h2 class="site-description">
+                {% if category_description %}
+                    {{ category_description }}
+                {% elsif page.category %}
+    			    A collection of {{ paginator.total_posts }} posts
+                {% endif %}
+            </h2>
+        </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <div class="post-feed">
+            {%  include post-card.html %}
+        </div>
+    </div>
+</main>

@@ -1,0 +1,17 @@
+{% if page.url %}
+  {% if page.url contains "category/" %}
+      {% assign title = page.url | remove: 'category' | remove: '/' | url_decode | replace: '-', ' ' | remove: ' ' %}
+	  {% for category in site.data.categories %}
+          {% if category[1].name == title %}
+              {% assign title = category[1].title %}
+          {% endif %}
+      {% endfor %}
+  {% elsif page.url contains "member/" %}
+      {% assign nickname = page.url | remove: 'member' | remove: '/' | replace: '-', ' ' | remove: ' ' %}
+      {% for member in site.data.members %}
+          {% if member[1].nickname == nickname %}
+              {% assign title = member[1].nickname %}
+          {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endif %}

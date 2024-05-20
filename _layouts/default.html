@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {% include dynamic_title.html %}
+    <title>{% if title %}{{ site.title }} - {{ title }}{% elsif page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }} - Мир Танков{% endif %}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
+
+    <link rel="stylesheet" href="/assets/css/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+	
+    {% include head.html %}
+
+</head>
+<body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
+
+    <div class="site-wrapper">
+        {{ content }}
+
+        {% if paginator.total_posts > site.paginate %}
+            {% if page.class == 'home-template' %}
+                {% include post_pagination.html %}
+            {% elsif page.class == 'page-template' %}
+                {% include post_pagination.html %}
+            {% elsif page.class == 'member-template' %}
+                {% include member_pagination.html %}
+            {% elsif page.class == 'category-template' %}
+                {% include category_pagination.html %}
+            {% else %}
+                {% include post_pagination.html %}
+            {% endif %}
+        {% endif %}
+
+        <!-- The footer at the very bottom of the screen -->
+        {% include footer.html %}
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+<!--     {% if site.subscribers %}
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                {% if site.logo %}
+                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
+                {% endif %}
+                <h1 class="subscribe-overlay-title">Subscribe to {{ site.title }}</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                {% include subscribe-form.html placeholder="youremail@example.com" %}
+            </div>
+        </div>
+    {% endif %} -->
+	
+     <!-- highlight.js -->
+<!--     <script src="/assets/js/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+	 -->
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('{{ paginator.total_pages }}');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    {% if paginator.total_pages > site.paginate %}
+    <script>
+        var maxPages = parseInt('{{ paginator.total_pages }}');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script>
+    {% endif %}
+
+    {% include analytics.html %}
+
+    {% if page.class == "post-template" %}
+        {% include post-scripts.html %}
+    {% elsif page.class == "page-template" %}
+        {% include page-scripts.html %}
+    {% endif %}
+
+</body>
+</html>

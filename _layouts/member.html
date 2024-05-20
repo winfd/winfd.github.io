@@ -1,0 +1,56 @@
+---
+layout: default
+current: member
+title: Member Page
+cover: false
+class: 'member-template'
+navigation: True
+label: Member
+logo: 'assets/images/members/ghost.png'
+---
+
+{% for member in site.data.members %}
+    {% if member[1].nickname == page.member %}
+    <header class="site-header outer {% if member[1].cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if member[1].cover %}{{ member[1].cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+        <div class="inner">
+            {% include site-nav.html %}
+            <div class="site-header-content">
+                {% if member[1].picture %}
+                    <img class="member-profile-image" src="{{ site.baseurl }}{{ member[1].picture }}" alt="{{ page.member }}" />
+                {% endif %}
+                <h1 class="site-title">{{ member[1].nickname }}</h1>
+                {% if member[1].bio %}
+                    <h2 class="member-bio">{{ member[1].bio }}</h2>
+                {% endif %}
+                <div class="member-meta">
+                    {% if member[1].location %}
+                        <div class="member-location">{{ member[1].location }} <span class="bull">&bull;</span></div>
+                    {% endif %}
+                    <div class="member-stats">
+                        {% if paginator.total_posts == 0 %}Нет записей{% elsif paginator.total_posts == 1 %}1 запись{% else %}{{ paginator.total_posts }} записей{% endif %} <span class="bull">&bull;</span>
+                    </div>
+                    {% if member[1].url %}
+                        <a class="social-link social-link-wb" href="{{ member[1].url_full }}" target="_blank" rel="noopener">{% include website.html %}</a>
+                    {% endif %}
+                    {% if member[1].twitter %}
+                        <a class="social-link social-link-tw" href="https://twitter.com/{{ member[1].twitter }}" target="_blank" rel="noopener">{% include twitter.html %}</a>
+                    {% endif %}
+                    {% if member[1].facebook %}
+                        <a class="social-link social-link-fb" href="https://facebook.com/{{ member[1].facebook }}" target="_blank" rel="noopener">{% include facebook.html %}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endif %}
+{% endfor %}
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            {%  include post-card.html %}
+        </div>
+
+    </div>
+</main>
