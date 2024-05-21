@@ -1941,20 +1941,29 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .footer {
-	position: relative;
+    position: relative;
     padding-top: 20px;
-    padding-bottom: 20px;
-    background: #000;
+    padding-bottom: 60px;
+    color: #fff;
+    background: color(var(--darkgrey) l(-15%));
 }
 
 .footer-content {
-	display: flex;
-    color: #474747;
-	text-align: left;
-    font-size: 1.3rem;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.3rem;
+}
+
+.footer-content a {
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-content a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
 }
 
 .footer-nav {
