@@ -1,23 +1,32 @@
-name: Testing the GitHub Pages publication
+name: Публикация на Github Pages
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  jekyll:
+  build:
+    name: Jekyll
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/cache@v4
+    - name: Выгрузка актуальной версии
+      uses: actions/checkout@v4
+      
+    - name: Кэширование установленных пакетов
+      uses: actions/cache@v4
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
-    - uses: helaili/jekyll-action@v2
+          
+    - name: Компоновка и публикация сайта Jekyll
+      uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
