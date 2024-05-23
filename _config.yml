@@ -50,10 +50,7 @@ permalink: /:title
 # permalink: /category/:category
 
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jemoji]
-
-emoji:
-  src: "/assets/images/emoji"
+plugins: [jekyll-paginate]
 
 safe: false
 lsi: false

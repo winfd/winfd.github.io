@@ -1,3 +1,0 @@
-emoji = Emoji.create("default") do |char|
-  char.image_filename = "/assets/images/emoji/default.gif"
-end
