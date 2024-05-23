@@ -52,7 +52,7 @@ permalink: /:title
 plugins_dir: [_plugins]
 plugins: [jekyll-paginate, gemoji]
 
-emoji_dir: "winfd.github.io/assets/images/emoji"
+# emoji_dir: "winfd.github.io/assets/images/emoji"
 
 safe: false
 lsi: false
