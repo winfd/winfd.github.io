@@ -4,7 +4,7 @@ module Jekyll
 
   module EmojiFilter
 
-    def smile(content)
+    def emojify(content)
       return false if !content
 
       config = @context.registers[:site].config
@@ -40,7 +40,7 @@ module Jekyll
       unicode_emoji_path = File.join(Emoji.images_path, 'emoji')
       Emoji.all.each do |em|
         # Use the name rather than the unicode character
-        FileUtils.cp File.join(unicode_emoji_path, em.image_filename), File.join(emoji_path, em.name + '.png')
+        FileUtils.cp File.join(unicode_emoji_path, em.image_filename), File.join(emoji_path, em.name + '.gif')
       end
     end
   end
