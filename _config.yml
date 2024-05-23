@@ -52,6 +52,8 @@ permalink: /:title
 plugins_dir: [_plugins]
 plugins: [jekyll-paginate, gemoji]
 
+emoji_dir: "/assets/images/emoji"
+
 safe: false
 lsi: false
 username: jekyllt
