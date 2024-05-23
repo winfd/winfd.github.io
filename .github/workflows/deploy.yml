@@ -1,51 +1,23 @@
-name: Публикация на Github Pages
+name: Build and deploy to GitHub Pages
 
 on:
   push:
     branches: [ main ]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  build:
-    name: Jekyll
-    runs-on: ubuntu-latest
-    
+  github-pages:
+    runs-on: ubuntu-latest   
     steps:
-    - name: Выгрузка актуальной версии
-      uses: actions/checkout@v4
-      
-    - name: Кэширование установленных пакетов
-      uses: actions/cache@v4
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
-          
-    - name: Компоновка и публикация сайта Jekyll
-      uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
-        
-  deploy:
-    name: deploy
-    environment:
-      name: Github Pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    if: ${{ github.ref == 'refs/heads/main' }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
-        if: ${{ success() }}
