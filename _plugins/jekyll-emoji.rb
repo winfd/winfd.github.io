@@ -29,7 +29,7 @@ module Jekyll
       return false if not config['emoji_path']
       return false if config['emoji_path'].start_with?('http')
       emoji_path = File.join(config['source'], config['emoji_path'])
-      return false if File.exist?(File.join(emoji_path, 'sixsense.gif'))
+      return false if File.exist?(File.join(emoji_path, 'default.gif'))
 
       puts "           Copying: Emoji from Gemoji to " + config['emoji_path']
 
