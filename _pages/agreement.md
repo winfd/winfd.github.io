@@ -4,7 +4,6 @@ current: agreement
 title: Пользовательское соглашение
 navigation: true
 logo: 'assets/images/site/ghost.png'
-permalink: /agreement/
 class: page-template
 subclass: 'post page'
 ---
