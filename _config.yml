@@ -52,6 +52,13 @@ permalink: /:title
 plugins_dir: [_plugins]
 plugins: [jekyll-paginate, jekyll-openmoji]
 
+emoji:
+  src: "https://winfd.github.io"
+  asset: "/assets/images/emoji"
+  extension: "gif"
+  img_attrs:
+    class: "emoji"
+
 safe: false
 lsi: false
 username: jekyllt
