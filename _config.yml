@@ -50,7 +50,7 @@ permalink: /:title
 # permalink: /category/:category
 
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-openmoji]
 
 safe: false
 lsi: false
