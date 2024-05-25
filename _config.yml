@@ -39,7 +39,10 @@ tiktok: false
 
 #sponsors
 sponsors: false
-    
+
+# emoji
+smileytheme: MSN
+
 disqus: False
 disqus_shortname: jekyllt # replace with your disqus username
 
