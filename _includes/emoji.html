@@ -1,3 +1,7 @@
 {% if page.content %}
-	{% assign val = page.content | replace_first: '::', 'span class=' %}
+	{% for emoji in site.data.emoji %}
+		{% if page.content contains emoji%}
+			{% assign val = emoji | replace emoji, '<span class="">emoji</span>'%}
+		{% endif %}
+	{% endfor %}
 {% endif %}
