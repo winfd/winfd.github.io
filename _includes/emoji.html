@@ -1,0 +1,5 @@
+{% if page.content %}
+	{% if page.content contains "::" %}
+      {% assign text = page.content | replace_first: '::', '<span class="' | replace: '::', '"></span>' %}
+	{% endif %}
+{% endif %}

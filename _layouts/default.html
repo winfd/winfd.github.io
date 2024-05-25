@@ -32,6 +32,7 @@
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
 
     <div class="site-wrapper">
+		{% include emoji.html %}
         {{ content }}
 
         {% if paginator.total_posts > site.paginate %}
