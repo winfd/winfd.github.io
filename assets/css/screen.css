@@ -1289,10 +1289,10 @@ Usage (In Ghost editor):
     box-shadow: none;
     background: 0 0;
     border: 1px solid #f25322;
-	margin: 0;
 	font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
+	margin: 1px;
 }
 
 .button_secondary:after {
