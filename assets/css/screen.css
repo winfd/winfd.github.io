@@ -390,7 +390,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 	opacity: 1;
 }
 
-.subcribe-button-text {
+.subscribe-button-text {
 	position: relative;
 	z-index: 2;
 }
