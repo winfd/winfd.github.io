@@ -337,10 +337,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
  */
  
-.subscribe-button {
+.button {
     font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
-    box-shadow: none;
-    background: 0 0;
+    box-shadow: 0 2px 0 #661000, inset 0 0 8px rgba(255, 210, 0, 0.1), inset 0 1px 0 #fab81b, inset 0 -1px 0 #ef4511;
+    background: linear-gradient(to bottom, #fab81b 0%, #ef4511 100%) no-repeat 0, linear-gradient(to bottom, #fab81b 0%, #ef4511 100%) no-repeat 100%, #f25322 linear-gradient(to bottom, #f60 0%, #a6230e 100%) no-repeat;
     background-size: 1px 100%, 1px 100%, cover;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -349,65 +349,44 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     -ms-flex-pack: center;
     justify-content: center;
     vertical-align: middle;
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 1em;
-    color: #f25322;
+    line-height: 14px;
+    color: #f9f5e1;
     text-transform: uppercase;
     text-shadow: 0 -1px rgba(71, 0, 0, 0.3);
-    border: 1px solid #f25322;
-	border-radius: 10px;
+    border-radius: 10px;
     position: relative;
     box-sizing: border-box;
-    min-width: 0;
+    min-width: 180px;
     padding: 4px 10px;
     white-space: nowrap;
 }
-
-.subscribe-button:after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+.button:after {
     content: "";
     box-shadow: inset 0 0 8px rgba(255, 210, 0, 0.1), inset 0 1px 0 #fab81b, inset 0 -1px 0 #ff7e00;
     background: linear-gradient(to bottom, #fab81b 0%, #ff7e00 100%) no-repeat 0, linear-gradient(to bottom, #fab81b 0%, #ff7e00 100%) no-repeat 100%, #ff7e00 linear-gradient(to bottom, #ff7e00 0%, #c2530a 100%) no-repeat;
     background-size: 1px 100%, 1px 100%, cover;
-	border: 1px solid #f25322;
 	border-radius: 10px;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.15s ease-out;
+    will-change: opacity;
 }
-
-.subscribe-button:hover {
-	color: #f9f5e1;
-	cursor: pointer;
-	text-decoration: none;
+@media (any-pointer: fine) {
+    .button:hover {
+        color: #f9f5e1;
+        cursor: pointer;
+    }
 }
-
-.subscribe-button:hover:after {
-	opacity: 1;
+@media (any-pointer: fine) {
+    .button:hover:after {
+        opacity: 1;
+    }
 }
-
-.subscribe-button-text {
-	position: relative;
-	z-index: 2;
-}
-
-.rss-button {
-    opacity: 0.8;
-}
-
-.rss-button:hover {
-    opacity: 1;
-}
-
-.rss-button svg {
-    margin-bottom: 1px;
-    height: 2.1rem;
-    fill: #fff;
+.button_text {
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 700px) {
