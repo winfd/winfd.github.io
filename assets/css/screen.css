@@ -295,7 +295,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 10px;
+    padding: 10px 15px;
     color: #fff;
     opacity: 0.8;
 	background-position: center;
