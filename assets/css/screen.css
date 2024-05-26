@@ -356,7 +356,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
     text-shadow: 0 -1px rgba(71, 0, 0, 0.3);
     border: 1px solid #f25322;
-	border-radius: 6px;
+	border-radius: 10px;
     position: relative;
     box-sizing: border-box;
     min-width: 0;
@@ -378,7 +378,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     z-index: 1;
     opacity: 0;
     transition: opacity 0.15s ease-out;
-    will-change: opacity;
 }
 
 .subscribe-button:hover {
