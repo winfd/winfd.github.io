@@ -359,7 +359,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     border-radius: 10px;
     position: relative;
     box-sizing: border-box;
-    min-width: 180px;
     padding: 4px 10px;
     white-space: nowrap;
 	opacity: 0.8;
