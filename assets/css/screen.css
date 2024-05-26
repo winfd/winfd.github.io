@@ -298,19 +298,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 10px;
     color: #fff;
     opacity: 0.8;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 20px;
 }
 
 .social-link:hover {
     opacity: 1;
-}
-
-.social-link:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 20px;
 }
 
 .social-link_vkontakte {
