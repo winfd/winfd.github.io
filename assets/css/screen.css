@@ -1212,7 +1212,7 @@ Usage (In Ghost editor):
 }
  */
  
-.button_secondary {
+.button__secondary {
 	opacity: 0.8;
 	padding: 4px 10px;
 	color: #f25322;
@@ -1225,7 +1225,7 @@ Usage (In Ghost editor):
     border-radius: 10px;
 }
 
-.button_secondary:after {
+.button__secondary:after {
     box-shadow: 0 0 0 #661000, inset 0 0 8px rgba(255, 210, 0, .1), inset 0 1px 0 #fab81b, inset 0 -1px 0 #ef4511;
     background: linear-gradient(to bottom, #fab81b 0%, #ef4511 100%) no-repeat 0, linear-gradient(to bottom, #fab81b 0%, #ef4511 100%) no-repeat 100%, #f25322 linear-gradient(to bottom, #f60 0%, #a6230e 100%) no-repeat;
     background-size: 1px 100%, 1px 100%, cover;
