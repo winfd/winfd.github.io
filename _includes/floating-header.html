@@ -11,9 +11,9 @@
     <div class="floating-header-title">{{ page.title }}</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this {% include point.html %}</div>
-        <a class="floating-header-share-telegram" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
+        <a class="floating-header-share-vkontakte" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
-            {% include telegram.html %}
+            {% include vkontakte.html %}
         </a>			
     </div>
     <progress class="progress" value="0">
