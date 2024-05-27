@@ -145,18 +145,6 @@ body {
     display: none;
 }
 
-videoback .background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%);
- }
-
 .site-header-content {
     display: flex;
     flex-direction: column;
