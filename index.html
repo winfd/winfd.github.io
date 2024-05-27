@@ -5,7 +5,7 @@ class: 'home-template'
 navigation: True
 ---
 
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+<header class="site-header outer{% if page.cover or site.cover %}" style="background-image: url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}){% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
 			<img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
