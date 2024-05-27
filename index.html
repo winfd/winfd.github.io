@@ -6,12 +6,6 @@ navigation: True
 ---
 
 <header class="site-header outer{% if page.cover or site.cover or site.video %}" style="background-image: url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}){% else %}no-cover{% endif %}">
-{% if site.video and page.class == 'home-template' %}
-    <video class="background" loop muted autoplay preload="auto">
-		<!-- <source src="{{ site.baseurl }}{{ site.video }}.mp4" type="video/mp4"> -->
-		<source src="{{ site.baseurl }}{{ site.video }}" type="video/webm">
-	</video>
-{% endif %}
 	<div class="inner">
         <div class="site-header-content">
 			<img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>

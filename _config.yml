@@ -11,8 +11,7 @@ baseurl: /
 # Website info
 title: '[EXMPL]Example'
 description: Выбирайте путь сложней - там меньше конкурентов...
-cover: assets/images/site/blog-cover.jpg
-video: assets/video/site/cover.webm
+cover: assets/images/site/blog-cover.webm
 logo: assets/images/site/clan-logo.png
 logo_dark: assets/images/site/favicon.png
 favicon: assets/images/site/favicon.png
