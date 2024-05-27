@@ -10,10 +10,18 @@
     <span class="floating-header-divider">&mdash;</span>
     <div class="floating-header-title">{{ page.title }}</div>
     <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this {% include point.html %}</div>
+        <div class="floating-header-share-label">Поделиться {% include point.html %}</div>
         <a class="floating-header-share-vkontakte" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             {% include vkontakte.html %}
+        </a>
+        <a class="floating-header-share-odnoklassniki" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            {% include odnoklassniki.html %}
+        </a>	
+        <a class="floating-header-share-telegram" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            {% include telegram.html %}
         </a>			
     </div>
     <progress class="progress" value="0">
