@@ -305,22 +305,41 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
-/* .social-link svg {
+.social-link svg {
     height: 1.8rem;
-    fill: #fff;
 }
 
-.social-link-fb svg {
-    height: 1.5rem;
+.social-link_dzen svg {
+	height: 1,25rem;
 }
 
-.social-link-tw svg {
-    height: 1.6rem;
+.social-link_vkontakte svg {
+	height: 1,25rem;
 }
 
-.social-link-tw svg path {
-    stroke: #fff;
-} */
+.social-link_odnoklassniki svg {
+	height: 1,25rem;
+}
+
+.social-link_telegram svg {
+	height: 1,25rem;
+}
+
+.social-link_tiktok svg {
+	height: 1,25rem;
+}
+
+.social-link_youtube svg {
+	height: 1,25rem;
+}
+
+.social-link_trovo svg {
+	height: 1,25rem;
+}
+
+.social-link_twitch svg {
+	height: 1,25rem;
+}
 
 @media (max-width: 700px) {
     .site-header {
