@@ -26,13 +26,16 @@ twitter: tryghost # replace by your username
 facebook: ghost # replace by your username
 
 # social networks
-vkontakte: mirtankov
-telegram: official_mirtankovru
-youtube: MirTankovOfficial
-twitch: mir_tankov_official
-trovo: MIR_TANKOV_Official
-discord: mtcis
-teamspeak: test
+dzen: example
+vkontakte: example
+odnoklassniki: example
+telegram: example
+tiktok: example
+youtube: example
+twitch: example
+trovo: example
+discord: example
+teamspeak: example
 
 # sponsors
 sponsors: false

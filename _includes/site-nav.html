@@ -2,7 +2,7 @@
     <div class="site-nav-left">
         {% if page.current != 'home' %}
             {% if site.logo %}
-                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}"><img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.title }}" /></a>
+                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" /></a>
             {% else %}
                 <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
             {% endif %}
@@ -13,16 +13,17 @@
     </div>
     <div class="site-nav-right">
         <div class="social-links">
-			{% if site.vkontakte %}<a class="social-link social-link_vkontakte" href="https://vk.com/{{ site.vkontakte }}" target="_blank" rel="noopener"></a>{% endif %}
-			{% if site.telegram %}<a class="social-link social-link_telegram" href="https://t.me/{{ site.telegram }}" target="_blank" rel="noopener"></a>{% endif %}
-			{% if site.youtube %}<a class="social-link social-link_youtube" href="https://www.youtube.com/@{{ site.youtube }}" target="_blank" rel="noopener"></a>{% endif %}
-			{% if site.trovo %}<a class="social-link social-link_trovo" href="https://trovo.live/{{ site.trovo }}" target="_blank" rel="noopener"></a>{% endif %}
-			{% if site.twitch %}<a class="social-link social-link_twitch" href="https://www.twitch.tv/{{ site.twitch }}" target="_blank" rel="noopener"></a>{% endif %}
+			{% if site.dzen %}<a class="social-link social-link_dzen" href="https://vk.com/{{ site.vkontakte }}" target="_blank" rel="noopener">{% include dzen.html %}</a>{% endif %}
+			{% if site.vkontakte %}<a class="social-link social-link_vkontakte" href="https://vk.com/{{ site.vkontakte }}" target="_blank" rel="noopener">{% include vkontakte.html %}</a>{% endif %}
+			{% if site.odnoklassniki %}<a class="social-link social-link_odnoklassniki" href="https://vk.com/{{ site.vkontakte }}" target="_blank" rel="noopener">{% include odnoklassniki.html %}</a>{% endif %}
+			{% if site.telegram %}<a class="social-link social-link_telegram" href="https://t.me/{{ site.telegram }}" target="_blank" rel="noopener">{% include telegram.html %}</a>{% endif %}
+			{% if site.tiktok %}<a class="social-link social-link_tiktok" href="https://t.me/{{ site.telegram }}" target="_blank" rel="noopener">{% include tiktok.html %}</a>{% endif %}
+			{% if site.youtube %}<a class="social-link social-link_youtube" href="https://www.youtube.com/@{{ site.youtube }}" target="_blank" rel="noopener">{% include youtube.html %}</a>{% endif %}
+			{% if site.trovo %}<a class="social-link social-link_trovo" href="https://trovo.live/{{ site.trovo }}" target="_blank" rel="noopener">{% include trovo.html %}</a>{% endif %}
+			{% if site.twitch %}<a class="social-link social-link_twitch" href="https://www.twitch.tv/{{ site.twitch }}" target="_blank" rel="noopener">{% include twitch.html %}</a>{% endif %}
         </div>
         {% if site.subscribers %}
-            <a class="button button_secondary" data-secondary-class="button_secondary" href="#subscribe">
-				<span class="button_text">Подать заявку</span>
-			</a>
+            <a class="button button_secondary" data-secondary-class="button_secondary" href="#subscribe"><span class="button_text">Подать заявку</span></a>
         {% endif %}
-    </div>
+    </div>	
 </nav>
