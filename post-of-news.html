@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>[EXMPL]Example - Пост из новостей</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
+
+    <link rel="stylesheet" href="/assets/css/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+	
+    	<meta name="description" content="Выбирайте путь сложней - там меньше конкурентов..." />
+	<link rel="shortcut icon" href="/assets/images/site/favicon.png" type="image/png" />
+	<link rel="canonical" href="/post-of-news" />
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="generator" content="Jekyll 3.6.2" />
+	 <!--title below is coming from _includes/dynamic_title-->
+	<meta property="og:site_name" content="[EXMPL]Example" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Пост из новостей" />
+	<meta property="og:description" content="Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated," />
+	<meta property="og:url" content="/post-of-news" />
+	<meta property="og:image" content="/assets/images/posts/news/bear.jpg" />
+	<meta property="article:publisher" content="https://www.facebook.com/ghost" />
+	<meta property="article:member" content="https://www.facebook.com/ghost" />
+	<meta property="article:published_time" content="2024-05-10T10:18:00+00:00" />
+	<meta property="article:modified_time" content="2024-05-10T10:18:00+00:00" />
+	<meta property="article:tag" content="News" />
+	<meta property="og:image:width" content="1400" />
+	<meta property="og:image:height" content="933" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Website",
+		"publisher": {
+			"@type": "Organization",
+			"name": "[EXMPL]Example",
+			"logo": "/assets/images/site/clan-logo.png"
+		},
+		"url": "/post-of-news",
+		"image": {
+			"@type": "ImageObject",
+			"url": "/assets/images/posts/news/bear.jpg",
+			"width": 2000,
+			"height": 666
+		},
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "/post-of-news"
+		},
+		"description": "Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated,"
+	}
+	</script>
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="/"><img src="/assets/images/site/clan-logo.png" alt="[EXMPL]Example" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+	<li class="nav-home" role="menuitem"><a href="/">Главная</a></li>
+	<li class="nav-news" role="menuitem"><a href="/category/news/">Новости</a></li>
+	<li class="nav-headquarters" role="menuitem"><a href="/category/headquarters/">Штаб</a></li>
+	<li class="nav-recruitment" role="menuitem"><a href="/category/recruitment/">Военкомат</a></li>
+	<li class="nav-teamspeak" role="menuitem"><a href="//discord.com/invite/example">TeamSpeak</a></li>
+	<li class="nav-discord" role="menuitem"><a href="//discord.com/invite/example">Discord</a></li>
+	
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+			<a class="social-link social-link_dzen" href="https://vk.com/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><g clip-path="url(#a)"><path fill="#fff" d="M18 18c-1.6 1.6-1.8 3.6-1.9 8 4.1 0 7 0 8.5-1.4C26 23 26 20 26 16c-4.4.2-6.5.3-8 1.8zM6 16c0 4 0 7 1.4 8.5C9 26 11.8 26 16 26c-.2-4.4-.3-6.5-1.8-8-1.6-1.6-3.7-1.8-8.1-1.9ZM15.9 6c-4.1 0-7 0-8.5 1.4C6 9 6 12 6 16c4.4-.2 6.5-.3 8-1.8 1.6-1.6 1.8-3.7 1.9-8.1Zm2 8c-1.5-1.5-1.7-3.6-1.8-8 4.1 0 7 0 8.5 1.4C26 9 26 12 26 16c-4.4-.2-6.5-.3-8-1.8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M6 6h21v21H6z"/></clipPath></defs></svg></a>
+			<a class="social-link social-link_vkontakte" href="https://vk.com/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" d="M17 23.5c-8.1 0-12.8-5.6-13-15h4.1c.1 6.9 3.2 9.8 5.6 10.4V8.5h3.8v6c2.4-.3 4.9-3 5.7-6h3.9c-.6 3.7-3.3 6.4-5.3 7.5 2 .9 5 3.2 6.2 7.5h-4.3c-.9-2.9-3.2-5-6.2-5.4v5.4Z"/></svg></a>
+			<a class="social-link social-link_odnoklassniki" href="https://vk.com/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" fill-rule="evenodd" d="M18.2 11.2c0-1.2-1-2.2-2.2-2.2-1.2 0-2.2 1-2.2 2.2 0 1.1 1 2.1 2.2 2.1 1.2 0 2.2-1 2.2-2.1zm3.1 0c0 2.8-2.4 5.1-5.3 5.1-3 0-5.4-2.3-5.4-5.1C10.6 8.3 13 6 16 6c3 0 5.3 2.3 5.3 5.2zm0 8a10.2 10.2 0 0 1-3.1 1.3l3 3a1.5 1.5 0 0 1 0 2 1.6 1.6 0 0 1-2.3 0L16 22.8l-3 2.9a1.6 1.6 0 0 1-1 .4c-.4 0-.8-.1-1.2-.4a1.5 1.5 0 0 1 0-2.2l3-2.9a10.2 10.2 0 0 1-3-1.2 1.5 1.5 0 0 1-.6-2c.5-.8 1.5-1 2.2-.6a7 7 0 0 0 7.2 0c.7-.4 1.7-.2 2.2.5a1.5 1.5 0 0 1-.5 2Z" clip-rule="evenodd"/></svg></a>
+			<a class="social-link social-link_telegram" href="https://t.me/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" fill-rule="evenodd" d="m5.6 14.6 13-5.6c6-2.5 7.3-3 8.2-3 .2 0 .6 0 .8.3.3.1.3.4.4.6v.8c-.3 3.5-1.8 12-2.5 16-.3 1.7-1 2.2-1.5 2.3-1.3.1-2.3-.9-3.5-1.7l-5-3.3c-2.1-1.5-.7-2.3.5-3.6.3-.3 6-5.5 6.1-6l-.1-.3h-.5c-.1 0-3.3 2-9.3 6.1-.9.6-1.7 1-2.4 1-.8-.1-2.3-.5-3.4-.9-1.4-.5-2.5-.7-2.4-1.5 0-.4.6-.8 1.7-1.2Z" clip-rule="evenodd"/></svg></a>
+			<a class="social-link social-link_tiktok" href="https://t.me/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" d="M20.2 6h-3.5v13.6a3 3 0 0 1-3 3 3 3 0 0 1-3.1-3 3 3 0 0 1 3-3v-3.4A6.5 6.5 0 0 0 7 19.6c0 3.6 3 6.4 6.6 6.4 3.6 0 6.6-2.9 6.6-6.4v-7a8.4 8.4 0 0 0 4.6 1.5v-3.4A4.8 4.8 0 0 1 20.2 6Z"/></svg></a>
+			<a class="social-link social-link_youtube" href="https://www.youtube.com/@example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" fill-rule="evenodd" d="M16 7.4s-7.5 0-9.4.5A3 3 0 0 0 4.5 10C4 12 4 16 4 16s0 4 .5 6A3 3 0 0 0 6.6 24c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.2C28 20 28 16 28 16s0-4-.5-6A3 3 0 0 0 25.4 8c-1.9-.5-9.4-.5-9.4-.5Zm-2.2 5.2 6 3.8-6 3.7z" clip-rule="evenodd"/></svg></a>
+			<a class="social-link social-link_trovo" href="https://trovo.live/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" d="M17 26c-2-.2-3.7-1-4.9-2.3-1.4-1.6-1.9-3.8-1.4-6.5v-.5c-.1-.2-.1-.2-2.4-.2H6.1L6 16l1.3-5.8.5-.4h4.2l.2-.2.3-1c.5-2.1.6-2.2.7-2.3.2-.3 0-.3 3.6-.3H20l.1.2.2.2-.4 1.6a35 35 0 0 0-.2 1.7h3c3.4 0 3.3 0 3.4.3v.2a117.5 117.5 0 0 1-1.4 6l-.6.1h-4.3l-1.7 1c-.9 1-1.2 2.4-.8 3.7a2.6 2.6 0 0 0 2.6 1.8c.7 0 1.1-.2 1.5-.6.4-.4.6-1 .5-1.5 0-.7-.4-1.1-1-1.1-.5 0-.8.2-.8.7l.2.4c.2.3.2.3 0 .5-.1.3-.5.4-.9.2-.6-.4-.8-1.4-.4-2.3.1-.4.6-.8 1-1a3 3 0 0 1 2.7.2c1.1.8 1.6 2.3 1.2 3.7a5 5 0 0 1-1.4 2.3 7.4 7.4 0 0 1-5.3 1.7z"/></svg></a>
+			<a class="social-link social-link_twitch" href="https://www.twitch.tv/example" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><g clip-path="url(#a)" transform="matrix(0.86956522,0,0,0.86956522,1.2173913,1.6521739)"><path fill="transparent" d="M 25.333,15.679 22,18.965 H 18.667 L 15.75,21.84 V 18.965 H 12 V 6.643 h 13.333 z"/><path fill="#fff" d="M 11.167,5 7,9.107 v 14.786 h 5 V 28 l 4.167,-4.107 H 19.5 L 27,16.5 V 5 Z M 25.333,15.679 22,18.964 H 18.667 L 15.75,21.84 V 18.965 H 12 V 6.643 h 13.333 z"/><path fill="#fff" d="m 22.833,9.518 h -1.666 v 4.929 h 1.666 z m -4.583,0 h -1.667 v 4.929 h 1.667 z"/></g><defs><clipPath id="a"><path fill="#fff" d="M 0,0 H 20 V 23 H 0 Z" transform="translate(7,5)"/></clipPath></defs></svg></a>
+        </div>
+        <a class="button button_secondary" data-secondary-class="button_secondary" href="#subscribe"><span class="button_text">Подать заявку</span></a>
+    </div>	
+</nav>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  category-news post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="10-05-2024">10-05-2024</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                                
+                                    <a href="/category/news/">НОВОСТИ</a>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        
+                    					
+
+                </section>
+                <h1 class="post-full-title">Пост из новостей</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/posts/news/bear.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
+
+<p>Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
+
+<p>But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+<!--             
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to [EXMPL]Example</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+             -->
+
+            <footer class="post-full-footer">
+                
+                    
+                
+                    
+                        <section class="member-card">
+                            
+                                <img class="member-profile-image" src="/assets/images/members/hate_you.gif" alt="hate_you" />
+                            
+                            <section class="member-card-content">
+                                <h4 class="member-card-name"><a href="/member/hate_you">hate_you</a></h4>
+                                
+                                    <p>Read <a href="/member/hate_you">more posts</a> by this member.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="button" href="/member/hate_you"><span class="button_text">Другие записи</span></a>
+                        </div>
+                    
+                
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+            
+
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/discord-server">
+                <div class="post-card-image" style="background-image: url(/assets/images/posts/social/telegram.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/discord-server">
+                <header class="post-card-header">
+                    
+                        
+                            
+								
+							
+								
+							
+								
+							
+								
+									<span class="post-card-categories">Социальные сети</span>
+								
+							
+								
+							
+								
+							
+                        
+                    
+
+                    <h2 class="post-card-title">Голосовая связь Discord</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>Рады поделиться с Вами свежей новостью!
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                        
+                        <img class="member-profile-image" src="/assets/images/members/hate_you.gif" alt="hate_you" />
+                        
+                        <span class="post-card-member">
+                            <a href="/member/hate_you/">hate_you</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 мин
+                    
+                </span>
+				<img class="reading-time-image" src="/assets/images/site/reading-time.svg" alt="Время на чтение:" />
+            </footer>
+        </div>
+    </article>
+
+            
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="/">
+            
+                <img src="/assets/images/site/favicon.png" alt="[EXMPL]Example icon" />
+            
+            <span>[EXMPL]Example</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Пост из новостей</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Поделиться <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-vkontakte" href="https://www.facebook.com/sharer/sharer.php?u=https://jekyllt.github.io/jasper2/post-of-news"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" d="M17 23.5c-8.1 0-12.8-5.6-13-15h4.1c.1 6.9 3.2 9.8 5.6 10.4V8.5h3.8v6c2.4-.3 4.9-3 5.7-6h3.9c-.6 3.7-3.3 6.4-5.3 7.5 2 .9 5 3.2 6.2 7.5h-4.3c-.9-2.9-3.2-5-6.2-5.4v5.4Z"/></svg>
+        </a>
+        <a class="floating-header-share-odnoklassniki" href="https://www.facebook.com/sharer/sharer.php?u=https://jekyllt.github.io/jasper2/post-of-news"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" fill-rule="evenodd" d="M18.2 11.2c0-1.2-1-2.2-2.2-2.2-1.2 0-2.2 1-2.2 2.2 0 1.1 1 2.1 2.2 2.1 1.2 0 2.2-1 2.2-2.1zm3.1 0c0 2.8-2.4 5.1-5.3 5.1-3 0-5.4-2.3-5.4-5.1C10.6 8.3 13 6 16 6c3 0 5.3 2.3 5.3 5.2zm0 8a10.2 10.2 0 0 1-3.1 1.3l3 3a1.5 1.5 0 0 1 0 2 1.6 1.6 0 0 1-2.3 0L16 22.8l-3 2.9a1.6 1.6 0 0 1-1 .4c-.4 0-.8-.1-1.2-.4a1.5 1.5 0 0 1 0-2.2l3-2.9a10.2 10.2 0 0 1-3-1.2 1.5 1.5 0 0 1-.6-2c.5-.8 1.5-1 2.2-.6a7 7 0 0 0 7.2 0c.7-.4 1.7-.2 2.2.5a1.5 1.5 0 0 1-.5 2Z" clip-rule="evenodd"/></svg>
+        </a>	
+        <a class="floating-header-share-telegram" href="https://www.facebook.com/sharer/sharer.php?u=https://jekyllt.github.io/jasper2/post-of-news"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="#fff" fill-rule="evenodd" d="m5.6 14.6 13-5.6c6-2.5 7.3-3 8.2-3 .2 0 .6 0 .8.3.3.1.3.4.4.6v.8c-.3 3.5-1.8 12-2.5 16-.3 1.7-1 2.2-1.5 2.3-1.3.1-2.3-.9-3.5-1.7l-5-3.3c-2.1-1.5-.7-2.3.5-3.6.3-.3 6-5.5 6.1-6l-.1-.3h-.5c-.1 0-3.3 2-9.3 6.1-.9.6-1.7 1-2.4 1-.8-.1-2.3-.5-3.4-.9-1.4-.5-2.5-.7-2.4-1.5 0-.4.6-.8 1.7-1.2Z" clip-rule="evenodd"/></svg>
+        </a>			
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+<!-- <script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+ -->
+
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="footer outer">
+	<div class="footer-content inner">
+		<section class="copyright"><a href="/">[EXMPL]Example</a> &copy; 2024</section>
+		<section class="poweredby">Сайт опубликован при помощи <a href="https://jekyllrb.com/">Jekyll</a> &
+			<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> используя тему
+			<a href="https://github.com/hateyouofficial/granite-theme" target="_blank" rel="noopener">Granite</a></section>
+		<nav class="footer-nav">
+			<a href="/" target="_blank" rel="noopener">Поддержка</a>
+			<a href="/" target="_blank" rel="noopener">Пользовательское соглашение</a>
+		</nav>
+	</div>
+</footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+<!--     
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                    <img class="subscribe-overlay-logo" src="/assets/images/site/clan-logo.png" alt="[EXMPL]Example" />
+                
+                <h1 class="subscribe-overlay-title">Subscribe to [EXMPL]Example</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+            </div>
+        </div>
+     -->
+	
+     <!-- highlight.js -->
+<!--     <script src="/assets/js/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+	 -->
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69281367-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+</body>
+</html>
