@@ -5,7 +5,7 @@ class: 'home-template'
 navigation: True
 ---
 
-<header class="site-header outer{% if page.cover or site.cover %}" style="{% if page.class == 'home-template' %}background: url(/assets/images/site/corner_left-top.webp) no-repeat 0 0, url(/assets/images/site/corner_right-top.webp) no-repeat 100% 0, url(/assets/images/site/corner_left-bottom.webp) no-repeat 0 100%, url(/assets/images/site/corner_right-bottom.webp) no-repeat 100% 100%;{% endif %}background-image: url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}){% else %}no-cover{% endif %}">
+<header class="site-header outer{% if page.cover or site.cover %}" style="background-image: url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}){% else %}no-cover{% endif %}">
 	<div class="inner">
         <div class="site-header-content">
 			<img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
