@@ -2,29 +2,29 @@ category1:
   name: news
   title: Новости
   description: Здесь будут новости  
-  cover: assets/images/categories/news/default-cover-1.jpg
+  cover: assets/images/categories/news-cover-1.jpg
 category2:
   name: headquarters
   title: Штаб
   description: False  
-  cover: assets/images/categories/headquarters/default-cover-1.jpg
+  cover: assets/images/categories/headquarters-cover-1.jpg
 category3:
   name: recruitment
   title: Военкомат
   description: False  
-  cover: assets/images/categories/recruitment/default-cover-1.jpg
+  cover: assets/images/categories/recruitment-cover-1.jpg
 category4:
   name: social
   title: Социальные сети
   description: False  
-  cover: assets/images/categories/social/default-cover-1.jpg
+  cover: assets/images/categories/social-cover-1.jpg
 category5:
   name: events
   title: Клановые события
   description: False  
-  cover: assets/images/categories/events/default-cover-1.jpg
+  cover: assets/images/categories/bear.jpg
 category6:
   name: other
   title: Другое
   description: False  
-  cover: assets/images/categories/other/default-cover-1.jpg
+  cover: assets/images/categories/bear.jpg
